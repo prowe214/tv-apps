@@ -1,0 +1,137 @@
+:root {
+  --epic-primary: #ef7b25;
+  --ikon-primary: #092340;
+}
+
+html,
+body,
+main {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "futura", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.08rem;
+}
+
+header {
+  padding: 20px;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  flex: 1;
+}
+
+.row h2 {
+  display: inline-block;
+  writing-mode: sideways-lr;
+  text-orientation: mixed;
+}
+
+.ikon {
+  background: linear-gradient(
+    180deg,
+    rgba(9, 35, 64, 1) 0%,
+    rgba(9, 35, 64, 0) 50%
+  );
+}
+
+.ikon h2 {
+  background-color: var(--ikon-primary);
+  color: yellow;
+}
+
+.ikon a:hover {
+  color: yellow;
+  background: linear-gradient(
+    90deg,
+    rgba(9, 35, 64, 1) 0%,
+    rgba(9, 35, 64, 0) 50%
+  );
+}
+
+.epic h2 {
+  background-color: var(--epic-primary);
+  color: white;
+}
+
+.epic {
+  background: linear-gradient(
+    180deg,
+    rgba(239, 123, 37, 1) 0%,
+    rgba(239, 123, 37, 0) 50%
+  );
+}
+
+.epic a:hover {
+  background-color: var(--epic-primary);
+  background: linear-gradient(
+    90deg,
+    rgba(239, 123, 37, 1) 0%,
+    rgba(239, 123, 37, 0) 50%
+  );
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+a img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.row a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Specifics */
+
+.keystone {
+  display: flex;
+  font-size: 3rem;
+}
+
+.keystone img {
+  max-width: 20%;
+  padding-right: 1rem;
+}
